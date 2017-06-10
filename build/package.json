@@ -28,6 +28,6 @@
     "hubot-slack-relay": "^0.0.13"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "6"
   }
 }
