@@ -1,5 +1,5 @@
-FROM node:0.12-slim
-MAINTAINER Maurice Kaag <mkaag@me.com>
+FROM node:6.11-slim
+MAINTAINER Kristof Dreier <kontakt@kristofdreier.de>
 
 # -----------------------------------------------------------------------------
 # Environment variables
@@ -12,8 +12,6 @@ ENV GITLAB_DEBUG false
 ENV GITLAB_BRANCHES master
 ENV GITLAB_SHOW_COMMITS_LIST 0
 ENV GITLAB_SHOW_MERGE_DESCRIPTION 0
-ENV HUBOT_NEWRELIC_API_KEY false
-ENV HUBOT_NEWRELIC_API_HOST api.newrelic.com
 
 # -----------------------------------------------------------------------------
 # Pre-install

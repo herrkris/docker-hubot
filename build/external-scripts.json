@@ -8,7 +8,7 @@
   "hubot-maps",
   "hubot-motivate",
   "hubot-pugme",
-  "hubot-redis-brain",
+  "hubot-azure-scripts/brain/storage-blob-brain",
   "hubot-rules",
   "hubot-seen",
   "hubot-shipit",

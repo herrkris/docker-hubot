@@ -1,8 +1,8 @@
 {
-  "name": "hubot",
+  "name": "docker-hubot",
   "version": "0.1.0",
   "private": true,
-  "author": "Maurice Kaag <mkaag@me.com>",
+  "author": "Kristof Dreier <kontakt@kristofdreier.de>",
   "description": "Helpful robot for you",
   "dependencies": {
     "hubot": "^2.12.0",
@@ -22,12 +22,13 @@
     "hubot-scripts": "^2.5.16",
     "hubot-seen": "^0.2.2",
     "hubot-shipit": "^0.2.0",
-    "hubot-slack": "^3.3.0",
+    "hubot-slack": "^4.3.4",
     "hubot-thank-you": "0.0.3",
     "hubot-youtube": "^0.1.2",
-    "hubot-slack-relay": "0.0.13"
+    "hubot-slack-relay": "0.0.13",
+    "hubot-azure-scripts": "^0.1.7"
   },
   "engines": {
-    "node": "6"
+    "node": "6.0.0"
   }
 }

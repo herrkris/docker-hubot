@@ -1,7 +1,7 @@
 docker-hubot
 ============
 
-[![Docker Hub](https://img.shields.io/badge/docker-mkaag%2Fhubot-008bb8.svg)](https://registry.hub.docker.com/u/mkaag/hubot/)
+[![Docker Hub](https://img.shields.io/badge/docker-mkaag%2Fhubot-008bb8.svg)](https://registry.hub.docker.com/u/herrkris/docker-hubot/)
 
 This repository contains the **Dockerfile** and the configuration files to build [Hubot](https://hubot.github.com/) for [Docker](https://www.docker.com/).
 
@@ -23,18 +23,20 @@ This repository contains the **Dockerfile** and the configuration files to build
 * hubot-newrelic2
 * hubot-pugme
 * hubot-redis-brain
+* hubot-azure-scripts
 * hubot-rules
 * hubot-seen
 * hubot-shipit
 * hubot-slack
 * hubot-thank-you
 * hubot-youtube
+* hubot-slack-relay
 
 
 ### Installation
 
 ```bash
-docker build -t mkaag/hubot github.com/mkaag/docker-hubot
+docker build -t herrkris/docker-hubot github.com/herrkris/docker-hubot
 ```
 
 ### Environment Variables
@@ -49,6 +51,8 @@ docker build -t mkaag/hubot github.com/mkaag/docker-hubot
 * GITLAB_SHOW_MERGE_DESCRIPTION
 * HUBOT_NEWRELIC_API_KEY
 * HUBOT_NEWRELIC_API_HOST
+* HUBOT_BRAIN_AZURE_STORAGE_ACCOUNT
+* HUBOT_BRAIN_AZURE_STORAGE_ACCESS_KEY
 
 ### Usage
 
@@ -58,5 +62,5 @@ docker build -t mkaag/hubot github.com/mkaag/docker-hubot
 docker run -v /home/user/hubot_scripts:/opt/scripts \
 --link redis:redis \
 -p 8080:8080 \
-mkaag/hubot
+herrkris/docker-hubot
 ```
