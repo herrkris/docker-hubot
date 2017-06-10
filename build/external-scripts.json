@@ -13,5 +13,6 @@
   "hubot-seen",
   "hubot-shipit",
   "hubot-thank-you",
-  "hubot-youtube"
+  "hubot-youtube",
+  "hubot-slack-relay"
 ]
