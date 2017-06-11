@@ -13,6 +13,9 @@ ENV GITLAB_BRANCHES master
 ENV GITLAB_SHOW_COMMITS_LIST 0
 ENV GITLAB_SHOW_MERGE_DESCRIPTION 0
 
+RUN apt-get update && apt-get install -y \
+        git
+
 # -----------------------------------------------------------------------------
 # Pre-install
 # -----------------------------------------------------------------------------
